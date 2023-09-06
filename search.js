@@ -42,7 +42,7 @@ module.exports = (pluginContext) => {
                     const query_words = query.split(' ')
                     const filteredBookmarks = bookmarks.filter(bookmark => (
                         query_words.every(
-                            word => bookmark.title.lower.indexOf(word) !== -1)))
+                            word => bookmark.title.toLowerCase().indexOf(word) !== -1)))
                     resolve(filteredBookmarks)
                 })
             })
