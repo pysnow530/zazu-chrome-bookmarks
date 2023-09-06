@@ -7,11 +7,9 @@
     "input": [
       {
         "id": "Chrome Bookmarks",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": ",b",
+        "type": "RootScript",
         "script": "search.js",
+        "debounce": 500,
         "connections": [
           "Open"
         ]
